@@ -1,4 +1,4 @@
- body {
+body {
     font-family: 'Inter', sans-serif;
     background-color: #fff;
     color: #111;
@@ -6,7 +6,47 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100vh; /* Full height of the viewport */
+    min-height: 100vh;
+}
+
+.black {
+    background: #000;
+}
+
+/* Responsive Header */
+.header1 {
+    display: flex;
+    justify-content: center;
+    border: 5px solid #ffffff;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    background: #000;
+    margin: 10px auto 30px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.header1 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Make image scale nicely on smaller screens */
+@media (max-width: 768px) {
+    .header1 img {
+        max-width: 100%;
+    }
+}
+
+/* Image Containers */
+.picLayout {
+    display: flex;
+    padding: 10px;
+    justify-content: space-evenly;
+    background-color: #fff;
 }
 
 .image-container {
@@ -35,16 +75,26 @@
 }
 
 @media (max-width: 600px) {
+
+    .picLayout {
+            display: flex;
+            padding: 10px;
+            justify-content: space-evenly;
+            background-color: #fff;
+        }
+
+
     .image-container img {
         max-height: 400px;
     }
 }
 
+/* Services Section */
 section.services {
     text-align: center;
     max-width: 1000px;
     padding: 2rem;
-    margin-top: auto; /* Pushes the services section to the bottom */
+    margin-top: auto;
 }
 
 .services h2 {
@@ -62,7 +112,7 @@ section.services {
     justify-content: space-evenly;
     gap: 2rem;
     margin-top: 2rem;
-    flex-wrap: wrap; /* allows wrapping on smaller screens */
+    flex-wrap: wrap;
 }
 
 .service-card {
@@ -88,36 +138,11 @@ section.services {
     color: #333;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 2rem 1rem;
     font-size: 0.9rem;
     color: #888;
-    border-top: 1px solid #ccc;
-    margin-top: 4rem;
-}
-.picLayout {
-    grid-template-columns: 2;
-display: flex;
-    /* space between images */
-    padding: 10px;
-    justify-content: space-evenly;
-    background-color: #fff;
-
-}
-.header1 {
-        display: flex;
-            border: 5px solid #ffffff;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            background: #000;
-            margin: 10px;
-            margin-bottom: 30px;
-            max-width: 90%;
-            justify-items: center;
-            justify-self: center;
-          
-}
-.black {
-    background: #000;
+    border-top:10px;
 }
