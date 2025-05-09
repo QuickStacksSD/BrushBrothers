@@ -1,7 +1,7 @@
 
 window.onload = function () {
-    const images1 = ["IMG/2.jpg", "IMG/Inside.jpg", "IMG/3.jpg", "IMG/Outside.jpg", "IMG/1.jpg"];
-    const images2 = ["IMG/1.jpg", "IMG/Outside.jpg", "IMG/2.jpg", "IMG/Inside.jpg", "IMG/3.jpg"];
+    const images1 = ["IMG/2.jpg", "IMG/Inside.JPG", "IMG/3.jpg", "IMG/Outside.JPG", "IMG/1.jpg"];
+    const images2 = ["IMG/1.jpg", "IMG/Outside.JPG", "IMG/2.jpg", "IMG/Inside.JPG", "IMG/3.jpg"];
 
     let index1 = 0;
     let index2 = 0;
